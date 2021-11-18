@@ -13,7 +13,7 @@ spec:
     server: {{ .Values.spec.destination.server }}
   project: default
   source:
-    path: sync-waves
+    path: sync-wavess
     repoURL: {{ .Values.spec.source.repoURL }}
     targetRevision: {{ .Values.spec.source.targetRevision }}
   syncPolicy:
