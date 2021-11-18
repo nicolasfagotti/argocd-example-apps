@@ -9,7 +9,7 @@ metadata:
     argocd.argoproj.io/sync-wave: "2"
 spec:
   destination:
-    namespace: helm-hooks
+    namespace: upwork-services
     server: {{ .Values.spec.destination.server }}
   project: default
   source:

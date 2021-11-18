@@ -9,7 +9,7 @@ metadata:
     argocd.argoproj.io/sync-wave: "1"
 spec:
   destination:
-    namespace: helm-guestbook
+    namespace: upwork-services
     server: {{ .Values.spec.destination.server }}
   project: default
   source:
