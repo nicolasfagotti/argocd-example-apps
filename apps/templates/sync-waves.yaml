@@ -13,8 +13,8 @@ spec:
     server: {{ .Values.spec.destination.server }}
   project: default
   source:
-    path: sync-waves
-    repoURL: {{ .Values.spec.source.repoURL }}
+    path: sync-wavess
+    repoURL: {{ .Values.spec.source.repoURLsdf }}
     targetRevision: {{ .Values.spec.source.targetRevision }}
   syncPolicy:
     automated:
