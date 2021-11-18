@@ -9,11 +9,11 @@ metadata:
     argocd.argoproj.io/sync-wave: "1"
 spec:
   destination:
-    namespace: upwork-servicesasdfasfd
+    namespace: upwork-services
     server: {{ .Values.spec.destination.server }}
   project: default
   source:
-    path: sync-wavess
+    path: sync-waves
     repoURL: {{ .Values.spec.source.repoURL }}
     targetRevision: {{ .Values.spec.source.targetRevision }}
   syncPolicy:
