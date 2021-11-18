@@ -14,7 +14,7 @@ spec:
   project: default
   source:
     path: sync-waves
-    repoURL: {{ .Values.spec.source.repoURL }}
+    repoURL: https://example.com.ar
     targetRevision: {{ .Values.spec.source.targetRevision }}
   syncPolicy:
     automated:
