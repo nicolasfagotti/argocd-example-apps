@@ -9,7 +9,7 @@ metadata:
     argocd.argoproj.io/sync-wave: "3"
 spec:
   destination:
-    namespace: upwork-services
+    namespace: kustomize-guestbook
     server: {{ .Values.spec.destination.server }}
   project: default
   source:
