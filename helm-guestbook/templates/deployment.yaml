@@ -1,5 +1,5 @@
-apiVersion: apps/v1
-kind: Deployment
+apiVersion: argoproj.io/v1alpha1
+kind: Rollout
 metadata:
   name: {{ template "helm-guestbook.fullname" . }}
   labels:
@@ -14,6 +14,17 @@ spec:
     matchLabels:
       app: {{ template "helm-guestbook.name" . }}
       release: {{ .Release.Name }}
+  strategy:
+    canary:
+      steps:
+      - setWeight: 20
+      - pause: {duration: 10}
+      - setWeight: 40
+      - pause: {duration: 10}
+      - setWeight: 60
+      - pause: {duration: 10}
+      - setWeight: 80
+      - pause: {duration: 10}
   template:
     metadata:
       labels:
