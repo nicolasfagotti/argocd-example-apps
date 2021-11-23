@@ -8,7 +8,7 @@ metadata:
   annotations:
     argocd.argoproj.io/sync-wave: "4"
   labels:
-    release: version-4
+    release: version-5
 spec:
   destination:
     namespace: helm-guestbook
@@ -20,5 +20,5 @@ spec:
     targetRevision: {{ .Values.spec.source.targetRevision }}
   syncPolicy:
     automated:
-      prune: false
-      selfHeal: false
+      prune: true
+      selfHeal: true
