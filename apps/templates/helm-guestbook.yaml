@@ -8,7 +8,7 @@ metadata:
   annotations:
     argocd.argoproj.io/sync-wave: "4"
   labels:
-    release: version-12
+    release: version-13
 spec:
   destination:
     namespace: helm-guestbook
