@@ -8,7 +8,7 @@ metadata:
   annotations:
     argocd.argoproj.io/sync-wave: "1"
   labels:
-    release: version-2
+    release: version-3
 spec:
   destination:
     namespace: kustomize-guestbook
