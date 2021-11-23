@@ -8,7 +8,7 @@ metadata:
   annotations:
     argocd.argoproj.io/sync-wave: "3"
   labels:
-    release: version-11
+    release: version-12
 spec:
   destination:
     namespace: helm-hooks
